@@ -60,6 +60,7 @@ body {
 }
 
 .wd-A__search-bar{
+    display:flex;
     align-items: center;
     background-color: rgb(33,35,39);;
     padding: 10px;
@@ -180,4 +181,10 @@ width: 98%;
 .wd-dot{
     font-size: 20px;
     font-weight: 900;
+}
+
+.wd-search-icon{
+    padding-right: 15px;
+    padding-left: 5px;
+    color: white;
 }
