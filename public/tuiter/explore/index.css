@@ -107,7 +107,10 @@ width: 48px;
     width: 70%;
 }
 
-.wd-center
+.wd-flex-start{
+    justify-content: flex-start;
+
+}
 
 .wd-right-pane{
     display: flex;
