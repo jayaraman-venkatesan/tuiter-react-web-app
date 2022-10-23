@@ -4,11 +4,12 @@
         "profileName": "Elon Musk",
         "handleName": "@elonMusk",
         "date": "2h",
-        "content": "Falcon in the winter, soldiers!",
+        "content": "As a lifelong Manchester United fan, I feel they've deliberately humiliated Cristiano Ronaldo this season. Hence, the club & the manager have no moral high ground to complain about him walking off the pitch. They treated him like trash & he gave it back to them.",
         "profileImg": "elon.png",
-        "postImg": "spacex.jpg",
-        "postImgContentTitle": "SpaceX releases the FALCON 2023",
-        "postImgContent": "SpaceX release enjoy"
+        "postImg": "ronaldo-news.jpeg",
+        "postImgContentTitle": "",
+        "postImgContent": "",
+        "isThread":true
 
     },
     {
@@ -16,10 +17,11 @@
         "profileName": "New York Post",
         "handleName": "@nyPost",
         "date": "Yesterday",
-        "content": "House of the Dragon blows up social media with fans in tears https://trib.al/HqEiwZo",
+        "content": "Two employees have been killed in a shooting at a Dallas hospital, according to police",
         "profileImg": "nypost.jpeg",
-        "postImg": "houseOfD.jpeg",
-        "postImgContentTitle": "",
-        "postImgContent": ""
+        "postImg": "shooting.jpeg",
+        "postImgContentTitle": "2 employees were killed in a Dallas hospital shooting | CNN",
+        "postImgContent": "Two employees were killed in saturday morning in a shooting at a Dallas hospital, the locality health system said",
+        "isThread":false
     }
 ]

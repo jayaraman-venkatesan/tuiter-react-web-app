@@ -3,9 +3,11 @@ import whoArray from './who.json';
 import WhoToFollowListItem
   from "./who-to-follow-list-item";
 
+import './index.css'
+
 const WhoToFollowList = () => {
  return(
-   <ul className="list-group">
+   <ul className="list-group wd-fixed">
      <li className="list-group-item">
        <h3>Who to follow</h3>
      </li>

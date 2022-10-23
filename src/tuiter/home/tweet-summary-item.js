@@ -13,6 +13,10 @@ const TweetSummaryItem = (
         }
     }
 ) => {
+    let imageContentHide = false;
+    if(tweet.postImgContentTitle == ""){
+        imageContentHide = true;
+    }
     console.log(tweet.profileImg);
     return (
         <div className="wd-post_container">
@@ -22,8 +26,8 @@ const TweetSummaryItem = (
             <div className="wd-mid-segment-container">
                 <div className="wd-C_container">
                     <div className="wd-C__profile-info">
-                        <h4 className="wd-C__profile-name">{tweet.profileName} <i className="fas fa-check-circle" aria-hidden="true"></i></h4>
-                        <h4 className="wd-C__handle-name">{tweet.handleName}</h4>
+                        <h4 className="wd-C__profile-name">{tweet.profileName} <i className="fas fa-check-circle wd-sky-blue" aria-hidden="true"></i></h4>
+                        <h4 className="wd-C__handle-name">&nbsp;{tweet.handleName}</h4>
                         <h4 className="wd-C__handle-name">&nbsp;<span className="wd-dot">&#183;</span>&nbsp;{tweet.date}</h4>
                     </div>
                     <div className="wd-C__options">
@@ -41,7 +45,7 @@ const TweetSummaryItem = (
                     <div className="wd-E__image">
                         <img src={require(`../images/${tweet.postImg}`)} width="100%" />
                     </div>
-                    <div className="wd-F__container">
+                    <div className={imageContentHide? 'wd-hidden':'wd-F__container'}>
                         <div className="wd-F__title">
                             {tweet.postImgContentTitle}
                         </div>
@@ -71,6 +75,9 @@ const TweetSummaryItem = (
                             <a href="#" className="wd-link"><i className="fa-solid fa-arrow-up-from-bracket"></i></a>
                         </p>
                     </div>
+                </div>
+                <div className={!tweet.isThread? 'wd-hidden':'wd-thread'}>
+                   <a href="#"> show this thread</a>
                 </div>
             </div>
         </div>

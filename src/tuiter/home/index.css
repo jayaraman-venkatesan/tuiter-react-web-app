@@ -1,6 +1,10 @@
 body{
     background-color: black;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', sans-serif !important;
+}
+
+.wd-posts{
+    border: 1px solid black;
 }
 
 .wd-container {
@@ -12,7 +16,7 @@ body{
     background-color: black;
     justify-content: space-between;
     font-family: 'Segoe UI',sans-serif;
-    color: white
+    color: black
 }
 
 .wd-A_container{
@@ -37,7 +41,7 @@ body{
 
 .wd-A__title{
     margin: auto;
-    color:white;
+    color:black;
     font-size: 20px;
 }
 
@@ -67,6 +71,7 @@ body{
     flex-direction: column;
     padding-left: 12px;
     width: 90%;
+    margin-bottom: 12px;
 }
 
 .wd-C_container{
@@ -84,17 +89,18 @@ body{
 }
 
 .wd-C__profile-name{
-    color:white;
+    color:black;
+    font-weight: bold;
     font-size: 15px;
 }
 
 .wd-C__handle-name{
-color: lightgrey;
+color: rgb(89,101,114);
 font-size: 15px;
 }
 
 .wd-C__post-date{
-color:lightgrey;
+color:rgb(89,101,114);
 }
 
 .wd-C__options{
@@ -112,7 +118,9 @@ color:lightgrey;
 
 .wd-E-F__container{
     border: 1px solid rgb(47, 51, 54);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     width: 100%;
 
 }
@@ -153,7 +161,7 @@ a:link{
 }
 
 .wd-icons{
-    color: lightgrey;
+    color: rgb(89,101,114);
 }
 
 .wd-numbers{
@@ -166,14 +174,30 @@ a:link{
 }
 
 .wd-link{
-    color: lightgrey;
+    color: rgb(89,101,114);
 }
 .red{
     color:red;
 }
 
+.wd-sky-blue{
+    color: deepskyblue;
+}
+
+.wd-numbers{
+    display: inline;
+}
+
+.wd-hidden{
+    display: none;
+}
+
 .wd-pd-5{
     padding-left: 5%;
+}
+
+.wd-thread{
+    color: rgb(0, 87, 248);
 }
 
 

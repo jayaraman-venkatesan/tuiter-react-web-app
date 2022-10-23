@@ -15,10 +15,10 @@ function Tuiter() {
     <NavigationSidebar active="explore"/>
   </div>
   <div className="col-10 col-md-10 col-lg-7 col-xl-6"
-       style={{"position": "relative"}}>
+       style={{"position": "relative; padding:0px;border:1px solid black"}}>
       <Routes>
-        <Route path="explores" element = {<ExploreComponent />} />
-        <Route path="homes" element = {<HomeComponent />} />
+        <Route path="explore" element = {<ExploreComponent />} />
+        <Route path="home" element = {<HomeComponent />} />
       </Routes>
     
   </div>

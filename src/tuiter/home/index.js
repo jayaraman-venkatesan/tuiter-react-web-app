@@ -5,14 +5,14 @@ import "./index.css";
 const HomeComponent = () => {
 
     return (
-        <ul>
-          {
-       tweetsArray.map(post =>
-         <TweetSummaryItem
-           key={post._id} tweet={post}/> )
-     }
-           
-        </ul>
+        <div className="wd-posts">
+            {
+                tweetsArray.map(post =>
+                    <TweetSummaryItem
+                        key={post._id} tweet={post} />)
+            }
+
+        </div>
     );
 
 }
