@@ -1,20 +1,12 @@
-import tweetsArray from './tweets.json'
-import TweetSummaryItem from './tweet-summary-item';
-import "./index.css";
-
+import React from "react";
+import TuitList from "../tuits/tuit-list";
+import WhatsHappening from "./whats-happening";
 const HomeComponent = () => {
-
     return (
-        <div className="wd-posts">
-            {
-                tweetsArray.map(post =>
-                    <TweetSummaryItem
-                        key={post._id} tweet={post} />)
-            }
-
-        </div>
-    );
-
-}
-
+        <>
+            <h4>Home</h4>
+            <WhatsHappening />
+            <TuitList />
+        </>);
+};
 export default HomeComponent;

@@ -166,6 +166,7 @@ a:link{
 
 .wd-numbers{
     padding-left: 12px;
+    display: inline;
 }
 
 .wd-post-info{

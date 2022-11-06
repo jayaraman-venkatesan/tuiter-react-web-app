@@ -5,11 +5,12 @@ import { useLocation } from "react-router";
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const paths = pathname.split('/')
-  const active = paths[2];
+  // home is active tab by default
+  const active = paths[2] ?? "home";
   return (
     <div className="list-group">
       <a className="list-group-item">Tuiter</a>
-      <Link to="/tuiter/home" className={`list-group-item
+      <Link to="/tuiter" className={`list-group-item
                          ${active === 'home' ? 'active' : ''}`}>
         Home
       </Link>
@@ -36,12 +37,12 @@ const NavigationSidebar = () => {
                          ${active === 'lists' ? 'active' : ''}`}>
         Lists
       </a>
-      <a className={`list-group-item
-                         ${active === 'profile' ? 'active' : ''}`}>
+      <Link to="/tuiter/profile" className={`list-group-item
+        ${active === 'profile' ? 'active' : ''}`}>
         Profile
-      </a>
+      </Link>
       <a className={`list-group-item
-                         ${active === 'more' ? 'active' : ''}`}>
+        ${active === 'more' ? 'active' : ''}`}>
         More
       </a>
     </div>

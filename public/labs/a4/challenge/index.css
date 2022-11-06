@@ -1,11 +1,11 @@
 body {
-   background-color: black;
-   font-size: 15px !important;
-   color: white;
+    background-color: black;
+    font-size: 15px !important;
+    color: white;
 
 }
 
-.wd-explore-container{
+.wd-explore-container {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -13,32 +13,32 @@ body {
     margin-top: 20px;
 }
 
-.wd-br-right{
-    background-color: rgb(22,24,28);
+.wd-br-right {
+    background-color: rgb(22, 24, 28);
     border-radius: 15px;
     /* margin-left: 38%; */
 }
 
-.wd-left-pane{
+.wd-left-pane {
     display: flex;
     flex-direction: column;
     /* width: 35%; */
 }
 
-.wd-profile-img{
-border-radius: 48px;
-height: 48px;
-width: 48px;
+.wd-profile-img {
+    border-radius: 48px;
+    height: 48px;
+    width: 48px;
 }
 
-.follow{
+.follow {
     margin-top: 2px;
-    border-radius: 80px; 
+    border-radius: 80px;
     background-color: white;
-    color: black;  
+    color: black;
 }
 
-.wd-left-flex-item{
+.wd-left-flex-item {
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -46,89 +46,90 @@ width: 48px;
 }
 
 
-@media (width >= 1200px){
+@media (width >=1200px) {
 
     .wd-left-pane {
         width: 25%;
     }
-   
+
 }
 
-@media (width < 1200px){
+@media (width < 1200px) {
 
     .wd-left-contents {
         width: max-content;
     }
-    .tweet{
+
+    .tweet {
         width: max-content;
     }
 }
 
-.wd-right-name{
+.wd-right-name {
     display: flex;
     flex-direction: column;
     padding-left: 2%;
     white-space: nowrap;
 }
 
-.heading{
+.heading {
     font-size: 15px;
     font-weight: bold;
     margin-left: -90px;
 }
 
-.wd-left-name{
+.wd-left-name {
     padding-left: 10%;
 }
 
-.wd-right-flex-item{
+.wd-right-flex-item {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 12px;
 }
 
-.name{
+.name {
     font-size: 15px;
     font-weight: bold;
 }
 
-.handle{
+.handle {
     font-size: 10px;
     color: gray;
     font-weight: normal;
 }
 
-.wd-tweet-btn{
+.wd-tweet-btn {
     margin-top: 15px;
 }
 
-.tweet{
+.tweet {
     width: 100%;
     border-radius: 80px;
 }
 
-.mr-2{
+.mr-2 {
     margin-right: 2%;
 }
 
-.wd-right-name{
+.wd-right-name {
     width: 70%;
 }
 
-.wd-center{
+.wd-center {
     justify-content: center;
 }
 
-.wd-flex-start{
+.wd-flex-start {
     justify-content: flex-start;
 }
 
-.wd-tuiter-link{
+.wd-tuiter-link {
     text-decoration: none;
 }
 
-.wd-right-pane{
+.wd-right-pane {
     display: flex;
     flex-direction: column;
     width: 70% !important;
@@ -136,28 +137,29 @@ width: 48px;
 
 .wd-container {
     margin: 0% 2% 0% 2%;
-    display: flex; /* or inline-flex */    
-    flex-direction: column; 
+    display: flex;
+    /* or inline-flex */
+    flex-direction: column;
     justify-content: space-between;
-    font-family: 'Segoe UI',sans-serif;
-    
-    border-left: 5px solid  rgb(22,24,28);
-    border-right: 5px solid  rgb(22,24,28);
+    font-family: 'Segoe UI', sans-serif;
+
+    border-left: 5px solid rgb(22, 24, 28);
+    border-right: 5px solid rgb(22, 24, 28);
 }
 
 
-.wd-verified{
+.wd-verified {
     margin-left: 2px;
 }
 
-.wd-A{
+.wd-A {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
 
-.wd-B{
+.wd-B {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -166,105 +168,107 @@ width: 48px;
 }
 
 
-.wd-B__nav-bar{
+.wd-B__nav-bar {
     height: 40px;
     width: 16.33%;
 }
 
-.wd-B__nav-bar-link{
+.wd-B__nav-bar-link {
     padding: 16px;
     font-size: 15px;
     color: rgb(110, 118, 125);
 }
 
-.wd-B__nav-bar-link:hover{
+.wd-B__nav-bar-link:hover {
     cursor: pointer;
     height: 40px;
     color: #1C9BEF !important;
     border-bottom: 3px solid #1C9BEF;
 }
 
-.nav-link-active{
+.nav-link-active {
     border-bottom: 3px solid #0d6efd !important;
     margin-bottom: 4px !important;
 }
 
-.nav-active{
+.nav-active {
     color: white !important;
     background-color: #0d6efd;
     border-color: #0d6efd;
 }
 
-.wd-left-flex-item:hover{
+.wd-left-flex-item:hover {
     color: white !important;
     background-color: #0d6efd;
     border-color: #0d6efd;
-cursor: pointer;
+    cursor: pointer;
 }
 
-.m-top-30{
+.m-top-30 {
     margin-top: 30px;
 }
 
-.wd-A__search-bar{
-    display:flex;
+.wd-A__search-bar {
+    display: flex;
     align-items: center;
-    background-color: white(33,35,39);;
+    background-color: white(33, 35, 39);
+    ;
     padding: 10px;
     border-radius: 20px;
     width: 72%;
     margin-left: 45px;
-    border:1px solid lightgray
-    
+    border: 1px solid lightgray
 }
-.wd-search_bar__input{
+
+.wd-search_bar__input {
     border: none;
-    background-color:black;
+    background-color: black;
     width: 100%;
     outline: none;
 }
 
-.wd-A__gear-icon{
+.wd-A__gear-icon {
     margin-right: 12px;
     margin-top: 6px;
 
 }
 
-.wd-B__nav-bar{
-    color:white;
+.wd-B__nav-bar {
+    color: white;
     text-align: left;
 }
 
 
-.wd-B_C{
+.wd-B_C {
     width: 100%;
-    background-color: rgb(23,24,29);
+    background-color: rgb(23, 24, 29);
     height: 10px;
-    border-top: 3px solid rgb(49,51,54);
+    border-top: 3px solid rgb(49, 51, 54);
 }
 
-.wd-articles-container{
+.wd-articles-container {
     display: flex;
     flex-direction: column;
     /* border-left: 1px solid lightgray;
     border-right: 1px solid lightgray; */
 }
 
-.wd-article{
+.wd-article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /*border-bottom: 1px solid lightgray; */
 }
 
-.nav-item{
+.nav-item {
     width: 20%;
 }
 
-.nav-link{
+.nav-link {
     transition: none;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     border-left: none;
     border-right: none;
     border-top: none;
@@ -272,11 +276,11 @@ cursor: pointer;
 
 
 
-.nav-link{
-    color: rgb(111,118,125); 
+.nav-link {
+    color: rgb(111, 118, 125);
 }
 
-.nav{
+.nav {
     width: 100%;
 }
 
@@ -284,47 +288,47 @@ cursor: pointer;
     height: 100px;
     width: 100px;
     border-radius: 10%;
-    margin-right:12px ;
+    margin-right: 12px;
     margin-top: 3px;
     margin-bottom: 3px;
 }
 
-.wd-article-info > p{
+.wd-article-info>p {
     margin: 0px;
 }
 
-.wd-article-info{
+.wd-article-info {
     padding: 12px;
 }
 
-.wd-title{
+.wd-title {
     font-size: 15px;
     font-weight: bold;
 }
 
-.wd-topic{
+.wd-topic {
     font-size: 15px;
     font-weight: bold;
     color: gray;
 }
 
-.wd-info{
+.wd-info {
     font-size: 15px;
     font-weight: bold;
 }
 
-.wd-dot{
+.wd-dot {
     font-size: 20px;
     font-weight: 900;
 }
 
-.wd-search-icon{
+.wd-search-icon {
     padding-right: 15px;
     padding-left: 5px;
     color: white;
 }
 
-.wd-overlay-image{
+.wd-overlay-image {
     position: absolute;
     margin-top: -100px;
     color: white;
@@ -332,19 +336,19 @@ cursor: pointer;
     padding-left: 20px;
 }
 
-.wd-infos{
+.wd-infos {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 12px;
-    color: rgb(111,118,125);
+    color: rgb(111, 118, 125);
 }
 
-.wd-info-row{
+.wd-info-row {
     display: flex;
     flex-direction: row;
 }
 
-.wd-row1{
+.wd-row1 {
     width: 33%;
 }
