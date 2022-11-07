@@ -46,8 +46,8 @@ const ProfileComponent = () => {
             </div>
             <div className='wd-profile-additional-icons-container'>
                 <div className='wd-profile-additional-info-container'>
-                    <div>
-                        {/* TODO update location icon */}
+                    <div className='wd-profile-icon'>
+                        
                         <i className="bi bi-geo-alt"></i>
                     </div>
                     <div className='wd-profile-additional-info-text'>
@@ -55,8 +55,8 @@ const ProfileComponent = () => {
                     </div>
                 </div>
                 <div className='wd-profile-additional-info-container'>
-                    <div>
-                        {/* TODO update icon */}
+                    <div className='wd-profile-icon'>
+                        
                         <i className="bi bi-balloon"></i>
                     </div>
                     <div className='wd-profile-additional-info-text'>
@@ -64,7 +64,7 @@ const ProfileComponent = () => {
                     </div>
                 </div>
                 <div className='wd-profile-additional-info-container'>
-                    <div>
+                    <div className='wd-profile-icon'>
                         {/* TODO update icon */}
                         <i className="bi bi-calendar3"></i>
                     </div>
