@@ -8,9 +8,8 @@ const TuitList = () => {
         (state) => state.tuits);
     return (
         <>
-            <h2>Home</h2>
             {tuits.map(tuit =>
-                <TuitItem tuit={tuit} />
+                <TuitItem key={tuit._id} tuit={tuit} />
             )}
         </>
     );
