@@ -49,7 +49,7 @@ const EditProfileComponent = () => {
                     <div className="wd-profile-header ">
                         <Link to="/tuiter/profile" className="wd-close-icon">
                             {/* TODO fix icon */}
-                            <i className="fa-regular fa-xmark"></i>
+                            <i className="fa-solid fa-xmark fa-xl"></i>
                         </Link>
 
                         <div className='wd-profile-name'>
