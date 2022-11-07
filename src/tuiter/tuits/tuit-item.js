@@ -24,7 +24,7 @@ const TuitItem = ({ tuit }
                                     {tuit.userName}
                                     <i className="fas fa-check-circle wd-sky-blue" aria-hidden="true"></i>
                                 </h4>
-                                <h4 className="wd-C__handle-name">&nbsp;{tuit.handle}</h4>
+                                <h4 className="wd-C__handle-name">{tuit.handle}</h4>
                                 <h4 className="wd-C__handle-name">&nbsp;<span className="wd-dot">&#183;</span>&nbsp;{tuit.time}</h4>
                             </div>
                         </div>
