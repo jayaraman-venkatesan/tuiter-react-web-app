@@ -14,14 +14,21 @@ import { Provider } from "react-redux";
 import ProfileComponent from "./profile";
 import EditProfileComponent from "./profile/edit-profile";
 const store = configureStore(
-  { reducer: { who: whoReducer, tuits: tuitsReducer, profile: profileReducer } });
+  {
+    reducer:
+    {
+      who: whoReducer,
+      tuitsData: tuitsReducer,
+      profile: profileReducer
+    }
+  });
 
 function Tuiter() {
   return (
     <Provider store={store}>
       <div className="row mt-2">
         <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-          
+
           <NavigationSidebar active="explore" />
         </div>
         <div className="col-10 col-md-10 col-lg-7 col-xl-6"

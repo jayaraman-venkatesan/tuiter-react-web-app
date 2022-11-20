@@ -1,13 +1,13 @@
 import { useDispatch } from "react-redux";
 import React from "react";
 import TuitStats from "./tuit-stats";
-import { deleteTuit } from "./tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({ tuit }
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return (
         <div className="wd-tuit-container">
@@ -42,7 +42,7 @@ const TuitItem = ({ tuit }
                     </div>
                 </div>
             </div>
-            <TuitStats liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits}></TuitStats>
+            <TuitStats liked={tuit.liked} likes={tuit.likes} replies={tuit.replies} retuits={tuit.retuits} tuit={tuit}></TuitStats>
         </div>
     );
 };
