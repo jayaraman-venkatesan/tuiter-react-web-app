@@ -9,42 +9,31 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch()
-
     const toggleLike = () => {
-        if (tuit.liked === false) {
-            dispatch(updateTuitThunk({
-                                         ...tuit,
-                                         liked: true,
-                                         likes: tuit.likes + 1
-                                     }))
-        } else {
-            if (tuit.liked === true) {
-                dispatch(updateTuitThunk({
-                                             ...tuit,
-                                             liked: false,
-                                             likes: tuit.likes - 1
-                                         }))
-            }
-        }
+        tuit.liked === false ?  dispatch(updateTuitThunk({
+            ...tuit,
+            likes: tuit.likes + 1,
+            liked: true
+        })) :  dispatch(updateTuitThunk({
+                    ...tuit,
+                    likes: tuit.likes - 1,
+                    liked: false
+                }))   
+
     }
 
 
     const toggleDislike = () => {
-        if (tuit.disliked === false) {
-            dispatch(updateTuitThunk({
-                                         ...tuit,
-                                         disliked: true,
-                                         dislikes: tuit.dislikes + 1
-                                     }))
-        } else {
-            if (tuit.disliked === true) {
-                dispatch(updateTuitThunk({
-                                             ...tuit,
-                                             disliked: false,
-                                             dislikes: tuit.dislikes - 1
-                                         }))
-            }
-        }
+        tuit.disliked === false ?  dispatch(updateTuitThunk({
+            ...tuit,
+            dislikes: tuit.dislikes + 1,
+            disliked: true
+        })) : dispatch(updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes - 1,
+                    disliked: false,
+                }))
+
     }
 
     return (
