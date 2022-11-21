@@ -10,6 +10,43 @@ const TuitStats = (
 ) => {
     const dispatch = useDispatch()
 
+    const toggleLike = () => {
+        if (tuit.liked === false) {
+            dispatch(updateTuitThunk({
+                                         ...tuit,
+                                         liked: true,
+                                         likes: tuit.likes + 1
+                                     }))
+        } else {
+            if (tuit.liked === true) {
+                dispatch(updateTuitThunk({
+                                             ...tuit,
+                                             liked: false,
+                                             likes: tuit.likes - 1
+                                         }))
+            }
+        }
+    }
+
+
+    const toggleDislike = () => {
+        if (tuit.disliked === false) {
+            dispatch(updateTuitThunk({
+                                         ...tuit,
+                                         disliked: true,
+                                         dislikes: tuit.dislikes + 1
+                                     }))
+        } else {
+            if (tuit.disliked === true) {
+                dispatch(updateTuitThunk({
+                                             ...tuit,
+                                             disliked: false,
+                                             dislikes: tuit.dislikes - 1
+                                         }))
+            }
+        }
+    }
+
     return (
         <div className="wd-G_container">
             <div className="wd-post-info">
@@ -29,22 +66,33 @@ const TuitStats = (
                 </p>
             </div>
             <div className="wd-post-info">
-                <p className="wd-icons">
-                    
-                    <i onClick={() => dispatch(updateTuitThunk({
-                        ...tuit,
-                        likes: tuit.likes + 1
-                    }))} className="bi bi-heart-fill me-2 text-danger"></i> {tuit.likes}
+            <p onClick={toggleLike} className="wd-icons">
+                    {
+                        tuit.liked &&
+                        <i className="fa-solid fa-heart text-danger"></i>
+                    }
+                    {
+                        !tuit.liked &&
+                        <i className="fa-regular fa-heart"></i>
+                    }
+                    &nbsp;
+                   {tuit.likes} 
                 </p>
             </div >
 
             <div className="wd-post-info">
-                <p className="wd-icons">
-                    
-                    <i onClick={() => dispatch(updateTuitThunk({
-                        ...tuit,
-                        dislikes: tuit.dislikes + 1
-                    }))} className="fa-sharp fa-solid fa-thumbs-down text-danger"></i> {tuit.dislikes}
+            <p onClick={toggleDislike} className="wd-icons">
+                    {
+                        tuit.disliked &&
+                        <i className="fa-solid fa-thumbs-down"></i>
+                    }
+                    {
+                        !tuit.disliked &&
+                        
+                        <i className="fa-regular fa-thumbs-down"></i>
+                    }
+                    &nbsp;
+                   {tuit.dislikes} 
                 </p>
             </div >
 
