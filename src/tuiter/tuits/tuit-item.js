@@ -13,7 +13,7 @@ const TuitItem = ({ tuit }
         <div className="wd-tuit-container">
             <div className="wd-tuit-content-container">
                 <div className="wd-B__image">
-                    <img className="wd-B__profile-img" src={require(`../images/${tuit.image}`)} />
+                    <img className="wd-B__profile-img" src={require(`../images/${tuit.image??'nasa.jpg'}`)} />
                 </div>
 
                 <div className="wd-mid-segment-container">
